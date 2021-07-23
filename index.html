@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Javni Trg</title>
+    <style>
+        body {
+            margin: 0px;
+        }
+        .menu {
+            position: absolute;
+            height: 100%;
+            
+            background-color: lightblue;
+        }
+        .menu-item {
+            position: relative;
+            padding: 10px 30px 10px 30px;
+            cursor: pointer;
+            text-align: center;
+            
+        }
+        .menu-item:hover {
+            
+            background-color: lightcoral;
+        }
+        .dropdown {
+              position: absolute;
+              background-color: lightblue;
+              top: 0px;
+              left: 100%;
+              display: block;
+              display: none;
+
+        }
+        .menu-item:hover .dropdown {
+            display: block;
+            background-color: lightblue
+        }
+        .dropdown-item {
+            position: relative;
+            padding: 10px 30px 10px 30px;
+            text-align: center;
+            }
+            .dropdown-item:hover {
+                background-color: lightcoral;
+            }    
+            .dropdown-item a {
+                color: black;
+                text-decoration: none;
+            }
+            .text {
+                color: lightblue;   
+                text-align: right;
+                font-family: Helvetica;
+            }
+    </style>
+</head>
+<body>
+    <div class="menu">
+        <div class="menu-item">
+            Svirke i Žurke
+            <div class="dropdown">
+                <div class="dropdown-item"> Rok/metal svirke </div>
+                <div class="dropdown-item"><a href="DJ.html"> DJ i tehno žurke </a></div>
+                <div class="dropdown-item">Narodna muzika</div>
+            </div>
+        </div>
+        <div class="menu-item">
+            Sportska dešavanja
+            <div class="dropdown">
+                <div class="dropdown-item">Fudbdal</div>
+                <div class="dropdown-item">Košarka</div>
+                <div class="dropdown-item">Vaterpolo</div>
+                <div class="dropdown-item">Ostalo</div>
+            </div>
+        </div>
+        <div class="menu-item">
+            Kulturna dešavanja
+            <div class="dropdown">
+                <div class="dropdown-item">Tešnjarske večeri</div>
+                <div class="dropdown-item">Filmovi</div>
+                <div class="dropdown-item">Predstave</div>
+                <div class="dropdown-item">Koncerti</div>
+            </div>
+        </div>
+    </div>
+    <h2 class="text"> Dobro došli na </h2>
+    <h1 class="text">Javni Trg</h1>
+    <p class="text">Mesto gde možete da pronađete sva dešavanja u vašem gradu</p>
+</body>
+</html>
